@@ -14,19 +14,16 @@
 body {
     background-color: darkgray;
     margin: auto;
-    
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 30px 0 30px 0px;
-    border-width: 0 20px 0 20px;
-    
+    padding: 40px 0 40px 0px;    
 }
 header h1{
-    font-size: 6em;
+    font-size: 7em;
     font-family: var(--font-cordel);
     font-weight: bold;
 }
@@ -34,6 +31,7 @@ header h1{
 header p {
     padding:0 0 10px;
     border: 1px solid black;
+    margin: auto;
 }
 
 header a {
@@ -46,14 +44,15 @@ a:hover{
     text-decoration: underline;
 }
 section {
-    line-height: 4em;
-    padding: 40px;
+    line-height: 5em;
+    padding: 60px;
+    margin: auto;
 }
 
 section p {
     font-family: var(--font-poema);
-    font-size: 30px;
-    padding: 20px;
+    font-size: 36px;
+    padding: 10px;
 }
 
 .normal {
@@ -63,7 +62,8 @@ section p {
 .imagem p {
     background-color: rgba(0, 0, 0, 0.363);
     color: white;
-    width: 380px;
+    min-width: 290px;
+    max-width: fit-content;
 }
 
 #flor{
