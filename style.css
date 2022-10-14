@@ -13,6 +13,8 @@
 
 body {
     background-color: darkgray;
+    min-height: 250px;
+    max-width: 800px;
     margin: auto;
     
 }
