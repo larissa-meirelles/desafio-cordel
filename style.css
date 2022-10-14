@@ -4,37 +4,40 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 
-* {
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+:root{
     --font-cordel:'Cabin Sketch';
     --font-poema: 'Love Ya Like A Sister';
+}
+
+* {
+    margin: 0;
+
 }    
 
-body {
+html, body {
     background-color: darkgray;
-    margin: auto;
+    min-height: 100vh;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 40px 0 40px 0px;    
 }
+
 header h1{
-    font-size: 7em;
+    font-variant: small-caps;
+    font-size: 10vh;
     font-family: var(--font-cordel);
-    font-weight: bold;
+    padding-top: 50px;
 }
 
 header p {
-    padding:0 0 10px;
-    border: 1px solid black;
-    margin: auto;
+    padding-bottom: 50px;
 }
 
-header a {
+a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -44,26 +47,33 @@ a:hover{
     text-decoration: underline;
 }
 section {
-    line-height: 5em;
-    padding: 60px;
-    margin: auto;
+    font-family: var(--font-poema);
+    font-size: 3vw;
+    line-height: 2em;
+    padding-left: 30px;
+    padding: 10vh 0;
 }
 
 section p {
-    font-family: var(--font-poema);
-    font-size: 36px;
     padding: 10px;
 }
 
 .normal {
     background-color: white;
+    color: black;
+}
+
+.imagem{
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.477)
 }
 
 .imagem p {
     background-color: rgba(0, 0, 0, 0.363);
-    color: white;
-    min-width: 290px;
-    max-width: fit-content;
+    display: inline-block;
+    width: 400px;
+    padding: 5px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.664);
 }
 
 #flor{
@@ -79,9 +89,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-}
-
-footer a {
-    color: white;
-    font-weight: bold;
 }
