@@ -11,12 +11,13 @@
 
 * {
     margin: 0;
+    padding: 0;
 
 }    
 
 html, body {
     background-color: darkgray;
-    min-height: 100vh;    
+    min-height: 100%;    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -28,7 +29,7 @@ header {
 
 header h1{
     font-variant: small-caps;
-    font-size: 10vh;
+    font-size: 10vw;
     font-family: var(--font-cordel);
     padding-top: 50px;
 }
@@ -46,16 +47,17 @@ a {
 a:hover{
     text-decoration: underline;
 }
+
 section {
     font-family: var(--font-poema);
     font-size: 3vw;
     line-height: 2em;
-    padding-left: 30px;
     padding: 10vh 0;
+    padding-left: 30px;
 }
 
 section p {
-    padding: 10px;
+    padding-bottom: 2em;
 }
 
 .normal {
@@ -69,9 +71,9 @@ section p {
 }
 
 .imagem p {
-    background-color: rgba(0, 0, 0, 0.363);
+    background-color: rgba(0, 0, 0, 0.215);
     display: inline-block;
-    width: 400px;
+    /* width: 600px; */ 
     padding: 5px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.664);
 }
